@@ -1,9 +1,11 @@
 import Button from '../packages/button/index';
+import Icon from '../packages/icon/index';
 
 
-const components = [Button];
+const components = [Button, Icon];
 const install = function (Vue) {
   components.forEach((component) => {
+    console.log(component.name);
     Vue.component(component.name, component);
   });
 };

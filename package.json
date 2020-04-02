@@ -3,17 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "bootstrap": "yarn || npm i",
+    "bootstrap": " cnpm i && cd ./docs && cnpm i ",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-lib": "vue-cli-service build --target lib --name cp-components --dest lib ./src/index.js",
     "test:unit": "vue-cli-service test:unit",
     "test": "karma start",
-    "lib": "vue-cli-service build --target lib --name xh-ui ./src/index.js",
-    "docs":"cd ./docs && npm run docs:dev"
+    "lib": "vue-cli-service build --target lib --name xh-ui  ./src/index.js",
+    "docs": "cd ./docs && npm run docs:dev"
   },
-  "main": "./dist/xh-ui.umd.min.js",
+  "main": "./lib/xh-ui.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"

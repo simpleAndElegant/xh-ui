@@ -1,0 +1,14 @@
+/* BEM
+ -------------------------- */
+//  @mixin b($block) {
+//     $B: $namespace+'-'+$block !global;
+  
+//     .#{$B} {
+//       @content;
+//     }
+//   }
+@mixin res($key) {
+    @media only screen and #{inspect(map-get($map,$key))} {
+      @content; // 插槽
+    }
+}

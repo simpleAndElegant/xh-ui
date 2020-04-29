@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'ElButtonGroup',
+  name: 'xh-button-group',
   mounted() {
     // 校验内部孩子是否是我们的button组件 如果不是报错
     const { children } = this.$el;

@@ -24,7 +24,7 @@
 </template>
 <script>
 export default {
-  name: 'xhButton',
+  name: 'xh-button',
   props: {
     type: {
       type: String,

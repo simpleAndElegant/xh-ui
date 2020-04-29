@@ -1,11 +1,12 @@
 import Button from '../packages/button/index';
 import Icon from '../packages/icon/index';
+import Row from '../packages/layout/row.vue';
+import Col from '../packages/layout/col.vue';
 
 
-const components = [Button, Icon];
+const components = [Button, Icon, Row, Col];
 const install = function (Vue) {
   components.forEach((component) => {
-    console.log(component.name);
     Vue.component(component.name, component);
   });
 };

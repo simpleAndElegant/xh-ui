@@ -35,7 +35,7 @@ describe('button.vue', () => {
         loading: true,
       },
     });
-    console.log(wrapper.vm.$el)
+    // console.log(wrapper.vm.$el)
     expect(wrapper.find('use').attributes('href')).to.eq('#icon-loading');
     expect(wrapper.find('button').attributes('disabled')).to.eq('disabled');
   });

@@ -1,7 +1,7 @@
 import Button from '../packages/button/index';
 import Icon from '../packages/icon/index';
-import Row from '../packages/layout/row.vue';
-import Col from '../packages/layout/col.vue';
+import Row from '../packages/row/row.vue';
+import Col from '../packages/col/col.vue';
 
 
 const components = [Button, Icon, Row, Col];

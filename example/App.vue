@@ -33,22 +33,16 @@
         <div class="green"> 33</div>
       </xh-col>
     </xh-row> -->
-    <xh-row :gutter='20'>
+    <xh-row :gutter='20' justify='end'>
       <xh-col :span='6'>
         <div class="red"> 33</div>
       </xh-col>
       <xh-col :span='6'>
         <div class="green"> 33</div>
       </xh-col>
-      <xh-col :span='6'>
-        <div class="green"> 33</div>
-      </xh-col>
-      <xh-col :span='6'>
-        <div class="green"> 33</div>
-      </xh-col>
     </xh-row>
     <br/>
-    <xh-row  :gutter='20'>
+    <!-- <xh-row  :gutter='20'>
       <xh-col
         :xs="8"
         :sm="6"
@@ -67,7 +61,7 @@
       <xh-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
         <div class="grid-content bg-purple-light"></div>
       </xh-col>
-    </xh-row>
+    </xh-row> -->
 
 
   </div>

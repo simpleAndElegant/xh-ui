@@ -25,6 +25,7 @@ describe('row.vue',() => {
     })
     it('justify', async () => {
         let wrapper = shallowMount(Row,{
+            attachToDocument:true,
             stubs:{
                 'xh-col':Col
             },
@@ -32,7 +33,6 @@ describe('row.vue',() => {
                 default:`<xh-col></xh-col>`
             },
         });
-        console.log(getComputedStyle(wrapper.vm.$el).justifyContent)
         expect(getComputedStyle(wrapper.vm.$el).justifyContent).to.eq('flex-start');
     })
 })

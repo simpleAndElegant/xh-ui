@@ -33,14 +33,14 @@
         <div class="green"> 33</div>
       </xh-col>
     </xh-row> -->
-    <xh-row :gutter='20' justify='end'>
+    <!-- <xh-row :gutter='20' justify='end'>
       <xh-col :span='6'>
         <div class="red"> 33</div>
       </xh-col>
       <xh-col :span='6'>
         <div class="green"> 33</div>
       </xh-col>
-    </xh-row>
+    </xh-row> -->
     <br/>
     <!-- <xh-row  :gutter='20'>
       <xh-col
@@ -62,7 +62,7 @@
         <div class="grid-content bg-purple-light"></div>
       </xh-col>
     </xh-row> -->
-
+    <xh-input />
 
   </div>
 </template>

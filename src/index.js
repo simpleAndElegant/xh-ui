@@ -1,10 +1,12 @@
 import Button from '../packages/button/index';
 import Icon from '../packages/icon/index';
-import Row from '../packages/row/row.vue';
-import Col from '../packages/col/col.vue';
+import Row from '../packages/row/index';
+import Col from '../packages/col/index';
+import Input from '../packages/input/index';
 
 
-const components = [Button, Icon, Row, Col];
+const components = [Button, Icon, Row, Col, Input];
+// eslint-disable-next-line func-names
 const install = function (Vue) {
   components.forEach((component) => {
     Vue.component(component.name, component);

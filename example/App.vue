@@ -62,7 +62,10 @@
         <div class="grid-content bg-purple-light"></div>
       </xh-col>
     </xh-row> -->
-    <xh-input />
+    <xh-input
+      v-model="value"
+      clearable
+    />
 
   </div>
 </template>
@@ -73,10 +76,18 @@ export default {
   name: 'App',
   components: {
   },
+  data() {
+    return {
+      value: '',
+    };
+  },
   methods: {
     handleClick(e) {
       console.log(e);
     },
+    // input(e) {
+    //   console.log(e, 111);
+    // },
   },
 };
 </script>

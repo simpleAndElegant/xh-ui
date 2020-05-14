@@ -3,9 +3,10 @@ import Icon from '../packages/icon/index';
 import Row from '../packages/row/index';
 import Col from '../packages/col/index';
 import Input from '../packages/input/index';
+import Progress from '../packages/progress/index';
 
 
-const components = [Button, Icon, Row, Col, Input];
+const components = [Button, Icon, Row, Col, Input, Progress];
 // eslint-disable-next-line func-names
 const install = function (Vue) {
   components.forEach((component) => {

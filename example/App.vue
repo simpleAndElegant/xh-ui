@@ -62,10 +62,23 @@
         <div class="grid-content bg-purple-light"></div>
       </xh-col>
     </xh-row> -->
-    <xh-input
+    <!-- <xh-input
       v-model="value"
       clearable
     />
+     -->
+     <xh-progress
+        :percentage='11'
+      >
+
+     </xh-progress>
+     <div class='wrapper'>
+        <xh-progress
+          :percentage="100"
+          :format="format"
+        ></xh-progress>
+     </div>
+
 
   </div>
 </template>
@@ -88,6 +101,10 @@ export default {
     // input(e) {
     //   console.log(e, 111);
     // },
+    format(percentage) {
+      return percentage === 100 ? '满' : `${percentage}%`;
+    },
+
   },
 };
 </script>
@@ -122,5 +139,8 @@ export default {
 .grid-content {
   border-radius: 4px;
   min-height: 36px;
+}
+.wrapper {
+  width:400px;
 }
 </style>
